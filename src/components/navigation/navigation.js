@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
-import './navigationBar.scss';
+import './navigation.scss';
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
