@@ -6,7 +6,7 @@ $background-color: rgba(255, 255, 255, 0.945);
 $lighter-bg : rgb(95 93 93 / 32%);
 $font-stack: 'Montserrat', sans-serif;
 $font: 'Caveat', cursive, serif;
-$border-size: 4px solid $primary-color;
+$border-size: 4px solid $text-color;
 $border: 3px solid $text-color;
 $box-shadow : 10px 8px 16px rgba(23, 115, 157, 0.384);
 
@@ -74,7 +74,7 @@ h6 {
 
   // @include d-flex(center);
 
-  color: $secondary-color;
+  color: $text-color;
   font-size: 2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, serif;
 }

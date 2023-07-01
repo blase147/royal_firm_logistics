@@ -5,7 +5,7 @@ import {
 import './App.css';
 // import { v4 as uuidv4 } from 'uuid';
 import HomePage from './components/homepage/homepage';
-import backgroundImage from './bg1.png';
+import backgroundImage from './bg1.jpg';
 
 function App() {
   return (

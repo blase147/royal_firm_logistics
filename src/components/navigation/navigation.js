@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import './navigation.scss';
 
