@@ -3,6 +3,29 @@
 //   FaCss3,
 // } from 'react-icons/fa';
 
+export const banner = [
+  {
+    image: './banner1.jpg',
+    name: 'John Doe',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+  {
+    image: './banner2.jpg',
+    name: 'John Doe',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+  {
+    image: './banner3.jpg',
+    name: 'John Doe',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+  {
+    image: './banner4.jpg',
+    name: 'John Doe',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+];
+
 export const teams = [
   {
     image: './team1.jpg',
@@ -10,17 +33,17 @@ export const teams = [
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
-    image: './team2.jpg',
+    image: './team1.jpg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
-    image: './team3.jpg',
+    image: './team1.jpg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
-    image: './team4.jpg',
+    image: './team1.jpg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },

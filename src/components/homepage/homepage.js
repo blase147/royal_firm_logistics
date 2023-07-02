@@ -1,35 +1,35 @@
 import React from 'react';
-import { testimonials, services, teams } from '../projectData/projectData';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import {
+  testimonials, services, teams, banner,
+} from '../projectData/projectData';
 import NavigationBar from '../navigation/navigation';
 
 const HomePage = () => (
-//   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  //   useEffect(() => {
-  //     const handleResize = () => setWindowWidth(window.innerWidth);
-  //     window.addEventListener('resize', handleResize);
-
-  //     return () => {
-  //       window.removeEventListener('resize', handleResize);
-  //     };
-  //   }, []);
-
-  //   return (
   <div className="home-page">
     <NavigationBar />
     <div className="banner">
-      <ul>
-        <li><img src="./banner1.jpg" alt="banner" /></li>
-        <li><img src="./banner2.jpg" alt="banner" /></li>
-        <li><img src="./banner3.jpg" alt="banner" /></li>
-        <li><img src="./banner4.jpg" alt="banner" /></li>
-      </ul>
+      <Slider autoplay={3000}>
+        {banner.map((item) => (
+          <div className="banner-list"
+            key={item.image}
+            style={{ background: `url('${item.image}') no-repeat center center` }}
+          >
+            <div className="center">
+              <h1>{item.title}</h1>
+              <p>{item.description}</p>
+              <button type="button">{item.button}</button>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
 
     <div className="about-us" />
     <div className="services">
       {services.map((service) => (
-        <div key={service.id} className="services">
+        <div key={service.id} className="service">
           <img src={service.image} alt={service.name} />
           <h3>{service.name}</h3>
           <p>{service.desc}</p>
@@ -56,4 +56,5 @@ const HomePage = () => (
     </div>
   </div>
 );
+
 export default HomePage;
