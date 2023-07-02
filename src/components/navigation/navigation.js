@@ -20,18 +20,23 @@ const NavigationBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  const phoneNumber = '+2348035344730';
   const navLinks = [
     { url: '#home', name: 'Home' },
     { url: '#services', name: 'Services' },
     { url: '#about-me', name: 'About' },
     { url: 'https://medium.com/@solarmails2/', name: 'Blog' },
     { url: '#contact-me', name: 'Contact' },
-    { url: 'tel:+2348035344730', name: <>
-      <FaPhone /> 
-      +2348035344730</> },
+    {
+      url: `tel:${phoneNumber}`,
+      name:
+  <>
+    <FaPhone />
+    {phoneNumber}
+  </>,
+    },
   ];
-  
+
   let menuIcon = null;
   if (windowWidth <= 768) {
     menuIcon = isOpen ? (
