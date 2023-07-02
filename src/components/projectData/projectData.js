@@ -5,24 +5,28 @@
 
 export const banner = [
   {
-    image: './banner1.jpg',
-    name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
-  },
-  {
+    moto: 'Bridging the gap...',
     image: './banner2.jpg',
-    name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    name: 'We are fast reliable and trusted',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!adipisicing elit. Magni,repellendus!',
   },
   {
+    moto: 'Bridging the gap...',
+    image: './banner2.jpg',
+    name: 'We are fast reliable and trusted',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!adipisicing elit. Magni,repellendus!',
+  },
+  {
+    moto: 'Bridging the gap...',
     image: './banner3.jpg',
-    name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    name: 'We are fast reliable and trusted',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!adipisicing elit. Magni,repellendus!',
   },
   {
+    moto: 'Bridging the gap...',
     image: './banner4.jpg',
-    name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    name: 'We are fast reliable and trusted',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!adipisicing elit. Magni,repellendus!',
   },
 ];
 
