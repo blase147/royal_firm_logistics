@@ -12,7 +12,8 @@ const HomePage = () => (
     <div className="banner">
       <Slider autoplay={3000}>
         {banner.map((item) => (
-          <div className="banner-list"
+          <div
+            className="banner-list"
             key={item.image}
             style={{ background: `url('${item.image}') no-repeat center center` }}
           >
