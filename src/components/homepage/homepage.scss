@@ -1,6 +1,7 @@
 @import '../sass/config';
 
 .banner {
+    // margin-bottom: 100px;
     .slider {
         height: 900px;
     }
@@ -59,3 +60,51 @@
     }
   }
 
+  .about-us {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-top: 100px;
+    margin: auto;
+    padding-bottom: 100px;
+
+    img {
+        width: 40%;
+    }
+
+    .image-desc {
+        width: 60%;
+        margin-left: 30px;
+        text-align: left;
+        // background-color: #d41313;
+
+        h4 {
+            margin-top: 0;
+            padding-top: 0;
+            font-size: 1.1em;
+            color: $blue-color;
+        }
+        h3 {
+            // margin-top: 50px;
+            padding-top: 0;
+            font-size: 2.1em;
+            width: 60%;
+        }
+        .special-color {
+            color: $blue-color;
+        }
+        p {
+            margin-top: 50px;
+        }
+        .explore-more {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: $blue-color;
+            border-radius: 2px;
+            color: white;
+        }
+    
+    }
+
+
+  }

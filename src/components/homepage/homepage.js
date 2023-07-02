@@ -8,6 +8,7 @@ import {
 } from '../projectData/projectData';
 import NavigationBar from '../navigation/navigation';
 import './homepage.scss';
+import about from '../../about.jpg';
 
 const HomePage = () => (
   <div className="home-page">
@@ -46,7 +47,26 @@ const HomePage = () => (
       </Slider>
     </div>
 
-    <div className="about-us" />
+    <div className="about-us">
+      <img src={about} alt="about-us" />
+      <div className="image-desc">
+        <h4>About us</h4>
+        <h3>
+          We are the
+          <span className="special-color"> most</span>
+          {' '}
+          technologically
+          <span className="special-color"> efficient</span>
+        </h3>
+        <p>
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+        </p>
+        <button className="explore-more" type="button">Explore more</button>
+      </div>
+    </div>
     <div className="services">
       {services.map((service) => (
         <div key={service.id} className="service">
