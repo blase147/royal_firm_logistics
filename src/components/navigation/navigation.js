@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { FaPhone } from 'react-icons/fa';
 import './navigation.scss';
 
 const NavigationBar = () => {
@@ -22,12 +23,15 @@ const NavigationBar = () => {
 
   const navLinks = [
     { url: '#home', name: 'Home' },
-    { url: '#my-works', name: 'Portfolio' },
+    { url: '#services', name: 'Services' },
     { url: '#about-me', name: 'About' },
-    { url: '#contact-me', name: 'Contact' },
     { url: 'https://medium.com/@solarmails2/', name: 'Blog' },
+    { url: '#contact-me', name: 'Contact' },
+    { url: 'tel:+2348035344730', name: <>
+      <FaPhone /> 
+      +2348035344730</> },
   ];
-
+  
   let menuIcon = null;
   if (windowWidth <= 768) {
     menuIcon = isOpen ? (

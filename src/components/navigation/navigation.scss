@@ -1,2 +1,30 @@
 @import '../sass/config';
 
+.desktop-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: $blue-color;
+    // border-top: 0px;
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 40px;
+        background-color: $background-color;
+        padding: 20px;
+        margin-bottom: 0;
+        width: 70%;
+        margin-top: 6px;
+        font-size: 1.2em;
+        font-weight: 500;
+        
+        a {
+            color: black;
+            &:hover {
+                color: $red-color;
+            }
+        }
+    }
+}
