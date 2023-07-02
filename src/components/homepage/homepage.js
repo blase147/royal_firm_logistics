@@ -1,10 +1,13 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import Slider from 'react-animated-slider';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
 import {
   testimonials, services, teams, banner,
 } from '../projectData/projectData';
 import NavigationBar from '../navigation/navigation';
+import './homepage.scss';
 
 const HomePage = () => (
   <div className="home-page">

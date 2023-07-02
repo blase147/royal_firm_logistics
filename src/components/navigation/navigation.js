@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import { FaPhone } from 'react-icons/fa';
+import logo from '../../logo.png'; // Import the logo image as a module
 import './navigation.scss';
 
 const NavigationBar = () => {
@@ -81,6 +82,7 @@ const NavigationBar = () => {
         )}
       </div>
       <div className="desktop-nav-container">
+        <img src={logo} alt="logo" className="logo" />
         {windowWidth > 768 && (
           <ul className="navigation-menu">
             {navLinks.map(({ url, name }) => (
