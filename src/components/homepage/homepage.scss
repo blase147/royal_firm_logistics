@@ -204,37 +204,107 @@
 }
 
 .services {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
-    .services-title {
-        display: flex;
-        flex-direction: column;
-        h3 {
-            padding-bottom: 0; 
-            margin-bottom: 0; 
-            color: red;    
-        }
-        h2 {
-            padding-bottom: 0; 
-            margin-top: 0; 
-            font-size: 2.5em;
-        }
+  .services-title {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      color: red;
     }
-    .services-con {
+
+    h2 {
+      padding-bottom: 0;
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+  }
+
+  .services-con {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    gap: 20px;
+
+    .service {
+      border: solid 15px blue;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.teams {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  .teams-title {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      color: red;
+    }
+
+    h2 {
+      padding-bottom: 0;
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+  }
+
+  .teams-con {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    gap: 20px;
+
+    .teams {
+      .social-con {
+        display: none;
+      }
+
+      .social-con {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: auto;
-        width: 60%;
-        gap: 20px;
+        gap: 12px;
+        background-color: #2907ee;
 
-        .service {
-            border:  solid 15px blue;
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
+        &:hover {
+          h3,
+          p {
+            display: none;
+          }
         }
+        // .social {
+        //   display: block;
+        //   margin-top: 20px;
+        //   padding: 5px;
+        //   color: #fff;
+        //   font-size: 20px;
+        // }
+      }
     }
-    
+
+    .team {
+      img {
+        border: solid 15px blue;
+        width: 80%;
+        border-radius: 50%;
+        height: 190px;
+      }
+    }
+  }
 }

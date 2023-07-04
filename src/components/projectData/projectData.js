@@ -1,7 +1,6 @@
-// import {
-//   FaHtml5, FaJs, FaReact, FaSass, FaGem,
-//   FaCss3,
-// } from 'react-icons/fa';
+import {
+  FaLinkedin, FaFacebook,
+} from 'react-icons/fa';
 
 export const banner = [
   {
@@ -49,24 +48,28 @@ export const services = [
 ];
 export const teams = [
   {
-    image: './team1.jpg',
+    image: './team1.jpeg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
-    image: './team1.jpg',
+    image: './team1.jpeg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
-    image: './team1.jpg',
+    image: './team1.jpeg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
-    image: './team1.jpg',
+    image: './team1.jpeg',
     name: 'John Doe',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
 ];
 

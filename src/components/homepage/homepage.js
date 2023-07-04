@@ -142,13 +142,27 @@ const HomePage = () => (
 
     </div>
     <div className="teams">
-      {teams.map((team) => (
-        <div key={team.id} className="team">
-          <img src={team.image} alt={team.name} />
-          <h3>{team.name}</h3>
-          <p>{team.desc}</p>
-        </div>
-      ))}
+      <div className="teams-title">
+        <h3>OUR TEAMS</h3>
+        <h2>Meet Our Efficient Staff Body</h2>
+      </div>
+      <div className="teams-con">
+        {teams.map((team) => (
+          <div key={team.id} className="team">
+            <img src={team.image} alt={team.name} />
+            <h3>{team.name}</h3>
+            <ul className="social-con">
+              {team.social.map((socialIcon) => (
+                <li key={socialIcon} className="social">
+                  {socialIcon}
+                </li>
+              ))}
+            </ul>
+            <p>{team.desc}</p>
+          </div>
+        ))}
+      </div>
+
     </div>
     <div className="testimonials">
       {testimonials.map((testimonial) => (
