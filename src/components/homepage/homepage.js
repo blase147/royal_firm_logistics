@@ -93,27 +93,31 @@ const HomePage = () => (
         </div>
       </div>
       <div className="text-content2">
-        <div>
-          <p>
-            <FaPhone className="icon" />
+        <div className="icon-num-desc-cont" style={{ backgroundColor: 'blue' }}>
+          <div><FaPhone className="icon" /></div>
+          <p className="num">1234</p>
+          <p className="desc">
             Customer review
           </p>
         </div>
-        <div>
-          <p>
-            <FaPhone className="icon" />
+        <div className="icon-num-desc-cont" style={{ backgroundColor: 'orange' }}>
+          <div><FaPhone className="icon" /></div>
+          <p className="num">1234</p>
+          <p className="desc">
             Happy Clients
           </p>
         </div>
-        <div>
-          <p>
-            <FaPhone className="icon" />
+        <div className="icon-num-desc-cont" style={{ backgroundColor: 'black' }}>
+          <div><FaPhone className="icon" /></div>
+          <p className="num">1234</p>
+          <p className="desc">
             Completed errands
           </p>
         </div>
-        <div>
-          <p>
-            <FaPhone className="icon" />
+        <div className="icon-num-desc-cont">
+          <div><FaPhone className="icon" /></div>
+          <p className="num"> 1234</p>
+          <p className="desc">
             Telephone support review
           </p>
         </div>

@@ -25,7 +25,6 @@
         font-size: 1.9em;
         padding-bottom: 0;
         margin-bottom: 0;
-        text-shadow: 15em;
       }
 
       h1 {
@@ -118,17 +117,16 @@
 .some-facts {
   display: flex;
   //   flex-direction: row;
-  //   justify-content: center;
-  //   gap: 20px;
+  // justify-content: center;
+  gap: 20px;
   text-align: left;
   margin: auto;
   width: 70%;
 
   .text-content1 {
-    width: 100%;
+    width: 50%;
 
     h3 {
-      font-style: 1.1em;
       color: rgb(224, 22, 22);
     }
 
@@ -137,7 +135,7 @@
     }
 
     p {
-      width: 100%;
+      //   width: 100%;
       color: black;
     }
 
@@ -169,29 +167,37 @@
   }
 
   .text-content2 {
+    // margin-left: 30px;
+    width: 45%;
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
-    width: 50%;
-    gap: 10px;
+    gap: 20px;
+    color: white;
 
-    p {
+    .icon-num-desc-cont {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-left: 30px;
       background-color: #c01111;
-      padding: 50px;
-      width: 12em;
+      padding: 60px 60px 60px 20px;
+      width: 15em;
       height: 5em;
-      
-      // margin-left: 0;
 
       .icon {
-        padding: 20px;
         color: #fff;
-        font-size: 44px;
+        font-size: 40px;
+      }
+
+      .num {
+        font-size: 1.9em;
+        margin-top: 0;
+        font-weight: 900;
+      }
+
+      .desc {
+        font-size: 1.1em;
+        margin-top: 0;
+        font-weight: 500;
       }
     }
   }
