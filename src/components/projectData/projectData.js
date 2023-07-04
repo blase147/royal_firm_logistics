@@ -30,6 +30,23 @@ export const banner = [
   },
 ];
 
+export const services = [
+  {
+    image: './food.jpeg',
+    title: 'Food',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+  {
+    image: '/groceries.jpeg',
+    title: 'Grocerries',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+  {
+    image: '/dispatch.jpg',
+    title: 'Dispatch',
+    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+  },
+];
 export const teams = [
   {
     image: './team1.jpg',
@@ -72,24 +89,6 @@ export const testimonials = [
   {
     image: './testimonial4.jpg',
     name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
-  },
-];
-
-export const services = [
-  {
-    image: './food.jpg',
-    title: 'Food',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
-  },
-  {
-    image: '/.grocerries.jpg',
-    title: 'Grocerries',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
-  },
-  {
-    image: '/.dispatch.jpg',
-    title: 'Dispatch',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
 ];

@@ -126,13 +126,20 @@ const HomePage = () => (
       </div>
     </div>
     <div className="services">
-      {services.map((service) => (
-        <div key={service.id} className="service">
-          <img src={service.image} alt={service.name} />
-          <h3>{service.name}</h3>
-          <p>{service.desc}</p>
-        </div>
-      ))}
+      <div className="services-title">
+        <h3>OUR SERVICES</h3>
+        <h2>Explore Our Services</h2>
+      </div>
+      <div className="services-con">
+        {services.map((services) => (
+          <div key={services.id} className="service">
+            <img src={services.image} alt={services.title} />
+            <h3>{services.title}</h3>
+            <p>{services.desc}</p>
+          </div>
+        ))}
+      </div>
+
     </div>
     <div className="teams">
       {teams.map((team) => (

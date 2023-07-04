@@ -202,3 +202,39 @@
     }
   }
 }
+
+.services {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .services-title {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            padding-bottom: 0; 
+            margin-bottom: 0; 
+            color: red;    
+        }
+        h2 {
+            padding-bottom: 0; 
+            margin-top: 0; 
+            font-size: 2.5em;
+        }
+    }
+    .services-con {
+        display: flex;
+        margin: auto;
+        width: 60%;
+        gap: 20px;
+
+        .service {
+            border:  solid 15px blue;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+}
