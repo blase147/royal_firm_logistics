@@ -3,7 +3,9 @@ import React from 'react';
 import Slider from 'react-animated-slider';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
-import { FaPhone } from 'react-icons/fa';
+import {
+  FaPhone, FaUser, FaStar, FaBriefcase,
+} from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
 } from '../projectData/projectData';
@@ -94,21 +96,21 @@ const HomePage = () => (
       </div>
       <div className="text-content2">
         <div className="icon-num-desc-cont" style={{ backgroundColor: 'blue' }}>
-          <div><FaPhone className="icon" /></div>
+          <div><FaStar className="icon" /></div>
           <p className="num">1234</p>
           <p className="desc">
             Customer review
           </p>
         </div>
         <div className="icon-num-desc-cont" style={{ backgroundColor: 'orange' }}>
-          <div><FaPhone className="icon" /></div>
+          <div><FaUser className="icon" /></div>
           <p className="num">1234</p>
           <p className="desc">
             Happy Clients
           </p>
         </div>
         <div className="icon-num-desc-cont" style={{ backgroundColor: 'black' }}>
-          <div><FaPhone className="icon" /></div>
+          <div><FaBriefcase className="icon" /></div>
           <p className="num">1234</p>
           <p className="desc">
             Completed errands
