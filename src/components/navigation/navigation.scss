@@ -1,41 +1,43 @@
 @import '../sass/config';
 
 .desktop-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  // align-items: baseline;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: $blue-color;
+
+  .logo {
+    width: 15%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 30%;
+  }
+
+  .navigation-menu {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    // align-items: baseline;
+    gap: 40px;
+    background-color: $background-color;
+    padding: 30px;
     margin-bottom: 0;
-    padding-bottom: 0;
-    background-color: $blue-color;
+    padding-right: 50px;
+    width: 75%;
+    margin-top: 6px;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-end-start-radius: 25px;
+    border-start-start-radius: 25px;
 
-    .logo {
-            width: 15%;
-            margin: auto;
-            background-color: #fff;
-            border-radius: 30%;
-        }
-    .navigation-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        gap: 40px;
-        background-color: $background-color;
-        padding: 30px;
-        margin-bottom: 0;
-        padding-right: 50px;
-        width: 75%;
-        margin-top: 6px;
-        font-size: 1.3em;
-        font-weight: 600;
-        border-end-start-radius: 25px;
-        border-start-start-radius: 25px;
+    a {
+      color: black;
 
-        a {
-            color: black;
-            &:hover {
-                color: $red-color;
-            }
-        }
+      &:hover {
+        color: $red-color;
+      }
     }
+  }
 }

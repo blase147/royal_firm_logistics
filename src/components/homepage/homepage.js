@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from 'react-animated-slider';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
+import { FaPhone } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
 } from '../projectData/projectData';
@@ -65,6 +66,57 @@ const HomePage = () => (
           Magni,repellendus!adipisicing elit. Magni,repellendus!
         </p>
         <button className="explore-more" type="button">Explore more</button>
+      </div>
+    </div>
+    <div className="some-facts">
+      <div className="text-content1">
+        <h3>SOME FACTS</h3>
+        <h2>#1 PLACE TO MANAGE ALL OF YOUR SHIPMENTS</h2>
+        <p>
+          {' '}
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+          ipsum
+        </p>
+        <div className="call-action">
+          <FaPhone className="call-icon" />
+          {' '}
+          <div className="call-text">
+            <p>
+              Call for your orders
+              <br />
+              +2348035344730
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="text-content2">
+        <div>
+          <p>
+            <FaPhone className="icon" />
+            Customer review
+          </p>
+        </div>
+        <div>
+          <p>
+            <FaPhone className="icon" />
+            Happy Clients
+          </p>
+        </div>
+        <div>
+          <p>
+            <FaPhone className="icon" />
+            Completed errands
+          </p>
+        </div>
+        <div>
+          <p>
+            <FaPhone className="icon" />
+            Telephone support review
+          </p>
+        </div>
       </div>
     </div>
     <div className="services">
