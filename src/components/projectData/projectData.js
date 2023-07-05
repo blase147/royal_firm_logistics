@@ -50,25 +50,25 @@ export const teams = [
   {
     image: './team1.jpeg',
     name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    desc: 'Designation',
     social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
     image: './team1.jpeg',
     name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    desc: 'Designation',
     social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
     image: './team1.jpeg',
     name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    desc: 'Designation',
     social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
   {
     image: './team1.jpeg',
     name: 'John Doe',
-    desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
+    desc: 'Designation',
     social: [<FaLinkedin key="linkedin" />, <FaFacebook key="facebook" />],
   },
 ];
