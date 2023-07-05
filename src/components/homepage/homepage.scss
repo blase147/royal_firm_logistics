@@ -268,35 +268,6 @@
     width: 80%;
     gap: 20px;
 
-    .teams {
-      .social-con {
-        display: none;
-      }
-
-      .social-con {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        gap: 12px;
-        background-color: #2907ee;
-
-        &:hover {
-          h3,
-          p {
-            display: none;
-          }
-        }
-        // .social {
-        //   display: block;
-        //   margin-top: 20px;
-        //   padding: 5px;
-        //   color: #fff;
-        //   font-size: 20px;
-        // }
-      }
-    }
 
     .team {
       img {
@@ -304,6 +275,30 @@
         width: 80%;
         border-radius: 50%;
         height: 190px;
+      }
+      
+    .social-con {
+      display: none;
+    }
+      &:hover {
+        h3,
+        p {
+          display: none;
+        }
+
+        .social-con {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          padding: 10px;
+          margin-top: 20px;
+          color: #fff;
+          background-color: #2907ee;
+
+          .social {
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
