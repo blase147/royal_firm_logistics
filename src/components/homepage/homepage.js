@@ -166,10 +166,14 @@ const HomePage = () => (
     </div>
     <div className="testimonials">
       {testimonials.map((testimonial) => (
-        <div key={testimonial.id} className="testimonial">
-          <img src={testimonial.image} alt={testimonial.name} />
-          <h3>{testimonial.name}</h3>
-          <p>{testimonial.desc}</p>
+        <div key={testimonial.id} className="testimonial-con">
+          <div className="testimonial-img-name">
+            <img src={testimonial.image} alt={testimonial.name} />
+            <h3>{testimonial.name}</h3>
+          </div>
+          <div className="desc">
+            <p>{testimonial.desc}</p>
+          </div>
         </div>
       ))}
     </div>
