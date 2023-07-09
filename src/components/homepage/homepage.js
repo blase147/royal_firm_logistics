@@ -4,7 +4,7 @@ import Slider from 'react-animated-slider';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
 import {
-  FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin, FaTwitter, FaInstagram,
+  FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaCopyright,
 } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
@@ -54,7 +54,7 @@ const HomePage = () => (
     <div className="about-us">
       <img src={about} alt="about-us" />
       <div className="image-desc">
-        <h4>About us</h4>
+        <h4>ABOUT US</h4>
         <h3>
           We are the
           <span className="special-color"> most</span>
@@ -75,7 +75,7 @@ const HomePage = () => (
       <div className="text-content1">
         <h3>SOME FACTS</h3>
         <h2>#1 PLACE TO MANAGE ALL OF YOUR SHIPMENTS</h2>
-        <p>
+        <p className="desc-text">
           {' '}
           lorem ipsum dolor sit amet consectetur adipisicing elit.
           Magni,repellendus!adipisicing elit. Magni,repellendus!
@@ -188,6 +188,9 @@ const HomePage = () => (
         ))}
       </div>
     </div>
+    <div>
+      <h3>LATEST STORY FROM UR BLOG</h3>
+    </div>
     <div className="footer">
       <div className="main-footer">
         <h3>
@@ -199,9 +202,10 @@ const HomePage = () => (
       <div className="sub-footer">
         <div className="sub-footer-cols">
           <h4>COMPANY</h4>
-          <p>Compnay</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
           <p>Blog</p>
-          <p>Privavcy Policy</p>
+          <p>Privacy Policy</p>
         </div>
         <div className="sub-footer-cols">
           <h4>OPEN HOURS</h4>
@@ -241,6 +245,13 @@ const HomePage = () => (
           </ul>
 
         </div>
+      </div>
+      <div className="copyright">
+        Copyright
+        <FaCopyright className="copyright-icon" size={30} alt="copyright" />
+        2023
+        {' '}
+        | ROYAL FIRM LOGISTICS
       </div>
     </div>
   </div>

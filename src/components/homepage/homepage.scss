@@ -63,27 +63,29 @@
 }
 
 .about-us {
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  width: 70%;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
   padding-top: 100px;
   margin: auto;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 
   img {
     width: 50%;
   }
 
   .image-desc {
-    width: 50%;
-    margin-left: 30px;
+    width: 40%;
+    // margin-left: 30px;
     text-align: left;
     // background-color: #d41313;
 
     h4 {
       margin-top: 0;
       padding-top: 0;
-      font-size: 1.1em;
+      font-size: 1.6em;
       color: $blue-color;
     }
 
@@ -101,13 +103,15 @@
     p {
       margin-top: 50px;
       width: 90%;
+      font-size: 1.5em;
     }
 
     .explore-more {
       margin-top: 50px;
-      padding: 20px;
+      padding: 40px;
       background-color: $blue-color;
       border-radius: 2px;
+      font-size: 1.5em;
       color: white;
       width: 30%;
     }
@@ -115,28 +119,31 @@
 }
 
 .some-facts {
+  box-sizing: border-box;
   display: flex;
-  //   flex-direction: row;
-  // justify-content: center;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
   text-align: left;
   margin: auto;
-  width: 70%;
+  width: 90%;
+  padding-bottom: 150px;
 
   .text-content1 {
     width: 50%;
 
     h3 {
+      font-size: 1.5em;
       color: rgb(224, 22, 22);
     }
 
     h2 {
-      font-style: 1.5em;
+      font-size: 1.9em;
     }
 
-    p {
-      //   width: 100%;
+    .desc-text {
+      font-size: 1.5em;
       color: black;
+      // background-color: #d70e0e;
     }
 
     .call-action {
@@ -167,8 +174,7 @@
   }
 
   .text-content2 {
-    // margin-left: 30px;
-    width: 45%;
+    width: 40%;
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
@@ -205,7 +211,9 @@
 
 .services {
   margin-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 150px;
+  width: 90%;
+  margin: auto;
 
   .services-title {
     display: flex;
@@ -227,7 +235,6 @@
   .services-con {
     display: flex;
     margin: auto;
-    width: 60%;
     gap: 20px;
 
     .service {
@@ -242,12 +249,12 @@
 }
 
 .teams {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   margin: auto;
+  // background-color: #dc0d0d;
 
   .teams-title {
     display: flex;
@@ -275,23 +282,21 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 70%;
     gap: 20px;
+    width: 100%;
+    // background-color: #fff;
 
     .team {
-      // width: 60%;
       padding-top: 0;
       border-bottom: solid 13px blue;
       background-color: #fff;
-      // transition: border-top  2s linear;
-      // height: 100%;
+      width: 100%;
+
 
       img {
-        // border: solid 15px blue;
         width: 100%;
         margin-top: 0;
-        // border-radius: 50%;
-        height: auto;
+        height: 32.1vh;
       }
 
       &:hover {
@@ -299,8 +304,6 @@
         p {
           display: none;
         }
-        // border-top: solid 3px white;
-        // background-color: #2907ee;
 
         .social-con {
           display: flex;
@@ -325,8 +328,9 @@
 .testimonials {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   margin: auto;
+  padding-bottom: 150px;
 
   .testimonials-title {
     flex-direction: column;
@@ -348,7 +352,7 @@
   .testimonial-con {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    // width: 90%;
     margin: auto;
     gap: 20px;
     // background-color: #09e72b;
@@ -440,16 +444,32 @@
 
     #identity-logo {
       // background-color: #fff;
-      width: 40%;
+      width: 30%;
       font-size: 1.5em;
       text-align: left;
 
     .social-icons {
       display: flex;
       gap: 50px;
-      justify-content: center;
-      padding: 40px;
+      justify-content: left;
+      padding-left: 0;
+      margin-left: 0;
+
+      li {
+        color: white;
+
+      }
     }
     }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    padding: 40px;
+    // background-color: #e90a0a;
+    font-size: 1.4em;
+    color: white;
   }
 }
