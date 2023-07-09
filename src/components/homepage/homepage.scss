@@ -388,6 +388,54 @@
   }
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+
+  .blog-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-content-con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    gap: 30px;
+    // background-color: #e60e0e;
+
+
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.9em;
+      width: 70%;
+    }
+    .article-desc {
+      font-size: 1.2em;
+      width: 70%;
+    }
+  }
+
+  .date-biline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  }
+}
+
 .footer {
   background-color: #000;
   padding: 100px;

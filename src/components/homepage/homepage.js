@@ -4,7 +4,8 @@ import Slider from 'react-animated-slider';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
 import {
-  FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaCopyright,
+  FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin,
+  FaTwitter, FaInstagram, FaCopyright, FaCalendar,
 } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
@@ -188,8 +189,68 @@ const HomePage = () => (
         ))}
       </div>
     </div>
-    <div>
-      <h3>LATEST STORY FROM UR BLOG</h3>
+    <div className="blog">
+      <div className="blog-title">
+        <h3>LATEST STORY FROM UR BLOG</h3>
+        <p>Read the Latest Article From Our Blog</p>
+      </div>
+      <div className="blog-content-con">
+        <div className="blog-content">
+          <img src="./../../bg1.jpg" alt="blog-pic" />
+          <div className="date-biline">
+            <FaUser />
+            {' '}
+            <p>John Doe</p>
+            <FaCalendar />
+            {' '}
+            <p>01 Jan, 2023</p>
+          </div>
+          <h3>How we build our community</h3>
+          <p>
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+          </p>
+          <p className="readmore">READ MORE</p>
+        </div>
+        {' '}
+        <div className="blog-content">
+          <img src="./../../bg1.jpg" alt="blog-pic" />
+          <div className="date-biline">
+            <FaUser />
+            {' '}
+            <p>John Doe</p>
+            <FaCalendar />
+            {' '}
+            <p>01 Jan, 2023</p>
+          </div>
+          <h3>How we build our community</h3>
+          <p>
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+          </p>
+          <p className="readmore">READ MORE</p>
+        </div>
+        {' '}
+        <div className="blog-content">
+          <img src="./../../bg1.jpg" alt="blog-pic" />
+          <div className="date-biline">
+            <FaUser />
+            {' '}
+            <p>John Doe</p>
+            <FaCalendar />
+            {' '}
+            <p>01 Jan, 2023</p>
+          </div>
+
+          <h3>How we build our community</h3>
+          <p className="article-desc">
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+          </p>
+          <p className="readmore">READ MORE</p>
+        </div>
+      </div>
+
     </div>
     <div className="footer">
       <div className="main-footer">
