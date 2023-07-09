@@ -245,9 +245,6 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: #e72323;
   padding-top: 100px;
   padding-bottom: 100px;
   margin: auto;
@@ -268,6 +265,7 @@
       font-size: 2.5em;
     }
   }
+
   .social-con {
     display: none;
     transition: height 4s linear;
@@ -275,10 +273,10 @@
 
   .teams-con {
     display: flex;
+    justify-content: center;
     margin: auto;
     width: 70%;
     gap: 20px;
-
 
     .team {
       // width: 60%;
@@ -287,6 +285,7 @@
       background-color: #fff;
       // transition: border-top  2s linear;
       // height: 100%;
+
       img {
         // border: solid 15px blue;
         width: 100%;
@@ -316,9 +315,69 @@
 
           .social {
             font-size: 1.5em;
-
           }
         }
+      }
+    }
+  }
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+
+  .testimonials-title {
+    flex-direction: column;
+    // background-color: #ad0f0f;
+
+    h3 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      color: red;
+    }
+    h2 {
+      padding-bottom: 0;
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+  }
+
+  .testimonial-con {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    // background-color: #09e72b;
+
+    .testimonial {
+      display: flex;
+      flex-direction: column;
+      background-color: #e1b4b4;
+      width: 90%;
+      padding-top: 10px;
+
+      .testimonial-img-name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        gap: 20px;
+        width: 90%;
+
+        img {
+          padding: 10px;
+          width: 50%;
+          height: 130px;
+          border-radius: 50%;
+        }
+      }
+
+      .desc {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

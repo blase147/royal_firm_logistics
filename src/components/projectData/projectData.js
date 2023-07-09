@@ -1,6 +1,10 @@
 import {
-  FaLinkedin, FaFacebook,
+  FaLinkedin, FaFacebook, FaStar, FaStarHalfAlt,
 } from 'react-icons/fa';
+// eslint-disable-next-line import/no-extraneous-dependencies
+// import { v4 as uuidv4 } from 'uuid';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import PropTypes from 'prop-types';
 
 export const banner = [
   {
@@ -73,25 +77,52 @@ export const teams = [
   },
 ];
 
+export const RatingIcon = ({ rating }) => {
+  const fullStar = <FaStar color="#ffc107" size={24} />;
+  const halfStar = <FaStarHalfAlt color="#ffc107" size={24} />;
+  const stars = [];
+
+  const fullStarsCount = Math.floor(rating);
+  const hasHalfStar = rating % 1 !== 0;
+
+  for (let i = 0; i < fullStarsCount; i += 1) {
+    stars.push(fullStar);
+  }
+
+  if (hasHalfStar) {
+    stars.push(halfStar);
+  }
+
+  return <>{stars}</>;
+};
+
+RatingIcon.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
+
 export const testimonials = [
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
+    rating: <RatingIcon rating={4.5} />,
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
+    rating: <RatingIcon rating={5} />,
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
+    rating: <RatingIcon rating={4.5} />,
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
+    rating: <RatingIcon rating={4.5} />,
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
 ];
