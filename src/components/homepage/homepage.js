@@ -4,7 +4,7 @@ import Slider from 'react-animated-slider';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-animated-slider/build/horizontal.css';
 import {
-  FaPhone, FaUser, FaStar, FaBriefcase,
+  FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin, FaTwitter, FaInstagram,
 } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
@@ -12,6 +12,7 @@ import {
 import NavigationBar from '../navigation/navigation';
 import './homepage.scss';
 import about from '../../about.jpg';
+import logo from '../../logo.png'; // Import the logo image as a module
 
 const HomePage = () => (
   <div className="home-page">
@@ -177,6 +178,7 @@ const HomePage = () => (
               <div>
                 <h3>{testimonial.name}</h3>
                 <h3>{testimonial.rating}</h3>
+                <h3>{testimonial.location}</h3>
               </div>
             </div>
             <div className="desc">
@@ -184,6 +186,61 @@ const HomePage = () => (
             </div>
           </div>
         ))}
+      </div>
+    </div>
+    <div className="footer">
+      <div className="main-footer">
+        <h3>
+          We Undrstand the Importance Approaching Each Work
+        </h3>
+        <p>+2348035344730</p>
+      </div>
+      <div className="hr" />
+      <div className="sub-footer">
+        <div className="sub-footer-cols">
+          <h4>COMPANY</h4>
+          <p>Compnay</p>
+          <p>Blog</p>
+          <p>Privavcy Policy</p>
+        </div>
+        <div className="sub-footer-cols">
+          <h4>OPEN HOURS</h4>
+          <p>Monday 11am -7pm</p>
+          <p>Tuesday Friday 11am-8pm</p>
+          <p>Sarturday 10am-6pm Policy</p>
+          <p>Sunday 11am-6pm 10am-6pm Policy</p>
+        </div>
+        <div className="sub-footer-cols">
+          <h4>OUR SERVICES HOURS</h4>
+          <p>Groceries Delivery and Errands</p>
+          <p>Parcel Dispatch</p>
+          <p>Food Deliveries and Errands</p>
+        </div>
+        <div id="identity-logo" className="sub-footer-cols">
+          <h4>
+            {' '}
+            <img src={logo} alt="logo" className="logo" style={{ width: '500px', height: '150px' }} />
+          </h4>
+          <p>
+            We are a logistics company built to help households
+            make budget, deliveries and errands easy
+          </p>
+          <ul className="social-icons">
+            <li>
+              <a href="www.linkedin.com/in/chukwuma-mosanya-346303"><FaFacebook size={30} alt="social-icon" /></a>
+            </li>
+            <li>
+              <a href="www.angelist.com"><FaInstagram size={30} alt="social-icon" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ChukwumaMosanya"><FaTwitter size={30} alt="social-icon" /></a>
+            </li>
+            <li>
+              <a href="www.facebook.com"><FaLinkedin size={30} alt="social-icons" /></a>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </div>
   </div>

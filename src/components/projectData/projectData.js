@@ -78,8 +78,8 @@ export const teams = [
 ];
 
 export const RatingIcon = ({ rating }) => {
-  const fullStar = <FaStar color="#ffc107" size={24} />;
-  const halfStar = <FaStarHalfAlt color="#ffc107" size={24} />;
+  const fullStar = <FaStar color="#ffc107" size={20} />;
+  const halfStar = <FaStarHalfAlt color="#ffc107" size={20} />;
   const stars = [];
 
   const fullStarsCount = Math.floor(rating);
@@ -105,24 +105,28 @@ export const testimonials = [
     image: './testimonials1.jpg',
     name: 'John Doe',
     rating: <RatingIcon rating={4.5} />,
+    location: 'Enugu',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
     rating: <RatingIcon rating={5} />,
+    location: 'Lagos',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
     rating: <RatingIcon rating={4.5} />,
+    location: 'Abuja',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
   {
     image: './testimonials1.jpg',
     name: 'John Doe',
     rating: <RatingIcon rating={4.5} />,
+    location: 'Portharcourt',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
 ];
