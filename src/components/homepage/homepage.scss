@@ -235,6 +235,7 @@
     display: flex;
     margin: auto;
     gap: 20px;
+    padding-bottom: 150px;
 
     .service {
       border: solid 15px blue;
@@ -242,6 +243,195 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .more-ab-service {
+    // background-color: #c71010;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+
+    .title-desc-con {
+      // background-color: #99c710;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 50%;
+
+      h2 {
+        font-size: 4.1em;
+
+        .special-color {
+          color: blue;
+        }
+      }
+      // padding-top: 150px;
+
+      .service-con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .title-icon {
+          font-size: 6.4em;
+          padding-top: 0;
+          margin-top: 0;
+          color: #2907ee;
+        }
+
+        .title-desc {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+
+          h3 {
+            text-align: left;
+            font-size: 2.3em;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+
+          p {
+            font-size: 1.5em;
+            margin-top: 0;
+            padding-top: 0;
+            // width: 100%;
+            // text-overflow: clip;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 50%;
+      height: 650px;
+    }
+  }
+}
+
+.get-a-quote {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-around;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+  padding-bottom: 150px;
+
+  .text-content1 {
+    width: 50%;
+
+    h3 {
+      font-size: 1.5em;
+      color: rgb(224, 22, 22);
+    }
+
+    h2 {
+      font-size: 1.9em;
+    }
+
+    .desc-text {
+      font-size: 1.5em;
+      color: black;
+      // background-color: #d70e0e;
+    }
+
+    .call-action {
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+
+      .call-icon {
+        background-color: #e20d0d;
+        padding: 30px;
+        color: white;
+      }
+
+      .call-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          padding-top: 0;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+
+  .text-content2 {
+    color: white;
+    width: 60%;
+    margin: auto;
+
+    .form-con {
+      width: 100%;
+
+      fieldset {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        .form-group {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+
+            form {
+              background-color: purple;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+                .input-con {
+                  display: grid;
+                  grid-template-columns: auto auto;
+                  color: white;
+                  gap: 20px;
+                  flex-direction: row;
+                  margin-bottom: 20px;
+
+                  input {
+                    background-color: purple;
+                    // margin: auto;
+                    width: 100%;
+                    height: 5.2vh;
+                    border-bottom: 1px solid #ffffff;
+                    font-size: 1.2em;
+                    color: white;
+                  }
+                    & ::placeholder {
+                       color: white;
+                    }
+                }
+                  .comment-con {
+
+                    textarea {
+                       background-color: purple;
+                       width: 100%;
+                       font-size: 1.2em;
+                       color: white;
+                       border-bottom: 1px solid #ffffff;
+                    }
+                    & ::placeholder {
+                       color: white;
+                    }
+                  }
+            }
+        }
       }
     }
   }
@@ -290,7 +480,6 @@
       border-bottom: solid 13px blue;
       background-color: #fff;
       width: 100%;
-
 
       img {
         width: 100%;
@@ -401,8 +590,9 @@
       color: red;
       font-size: 1.2em;
     }
+
     p {
-      font-size: 2.0em;
+      font-size: 2em;
       font-weight: 900;
       margin-top: 0;
     }
@@ -416,42 +606,43 @@
     gap: 30px;
     // background-color: #e60e0e;
 
+    .blog-content {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
 
-  .blog-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+      img {
+        width: 100%;
+      }
 
-    img {
-      width: 100%;
+      h3 {
+        font-size: 1.9em;
+        width: 70%;
+      }
+
+      .article-desc {
+        margin-top: 0;
+        font-size: 1.2em;
+        width: 70%;
+      }
+
+      .readmore {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        font-size: 1.6em;
+        width: 40%;
+        color: #e20d0d;
+      }
     }
 
-    h3 {
-      font-size: 1.9em;
-      width: 70%;
-    }
-    .article-desc {
-      margin-top: 0;
-      font-size: 1.2em;
-      width: 70%;
-    }
-    .readmore {
+    .date-biline {
       display: flex;
       align-items: center;
-      gap: 5px;
-      padding: 10px;
-      font-size: 1.6em;
-      width: 40%;
-      color: #e20d0d;
+      gap: 10px;
+      margin-left: 10px;
     }
-  }
-
-  .date-biline {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-  }
   }
 }
 
@@ -515,25 +706,24 @@
       font-size: 1.5em;
       text-align: left;
 
-    .social-icons {
-      display: flex;
-      gap: 50px;
-      justify-content: left;
-      padding-left: 0;
-      margin-left: 0;
+      .social-icons {
+        display: flex;
+        gap: 50px;
+        justify-content: left;
+        padding-left: 0;
+        margin-left: 0;
 
-      li {
-        color: white;
-
+        li {
+          color: white;
+        }
       }
-    }
     }
   }
 
   .copyright {
     display: flex;
     justify-content: center;
-    gap:5px;
+    gap: 5px;
     padding: 40px;
     // background-color: #e90a0a;
     font-size: 1.4em;

@@ -5,7 +5,7 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import {
   FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin,
-  FaTwitter, FaInstagram, FaCopyright, FaCalendar, FaArrowRight,
+  FaTwitter, FaInstagram, FaCopyright, FaCalendar, FaArrowRight, FaGlobe, FaTruck,
 } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
@@ -141,8 +141,122 @@ const HomePage = () => (
           </div>
         ))}
       </div>
+      <div className="more-ab-service">
+        <div className="title-desc-con">
+          <h2>
+            We are Trusted
+            {' '}
+            <span className="special-color">Logistics Company</span>
+          </h2>
+          <div className="service-con">
+            <FaGlobe className="title-icon" />
+            {' '}
+            <div className="title-desc">
+              <h3>Worldwide Service</h3>
+              <p>
+                loremwhjbjsjxvsyxyxjysyxcvyjxutcxyhsxuxyuyywcyxwyxywxywcxycxyyxvxxw
+                ibubuubiuccubuvyvi
+                ibuvuvucvuibuvuvuvuuv
+              </p>
+            </div>
+          </div>
+          <div className="service-con">
+            <FaTruck className="title-icon" />
+            {' '}
+            <div className="title-desc">
+              <h3>On Time Delivery</h3>
+              <p>
+                loremwhjbjsjxvsyxyxjysyxcvyjxutcxyhsxuxyuyywcyxwyxywxywcxycxyyxvxxwib
 
+                ubuubiuccubuvyvi
+                ibuvuvucvuibuvuvuvuuv
+              </p>
+            </div>
+          </div>
+          <div className="service-con">
+            <FaPhone className="title-icon" />
+            {' '}
+            <div className="title-desc">
+              <h3>27/7 Telephone Support</h3>
+              <p>
+                loremwhjbjsjxvsyxyxjysyxcvyjxutcxyhsxuxyuyywcyxwyxywxywcxycxyyxvxxwib
+                ubuubiuccubuvyvi
+                ibuvuvucvuibuvuvuvuuv
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./../../bg1.jpg" alt="services" />
+      </div>
     </div>
+
+    <div className="get-a-quote">
+      <div className="text-content1">
+        <h3>GET A QUOTE</h3>
+        <h2>REQUEST A FREE QUOTE</h2>
+        <p className="desc-text">
+          {' '}
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+          lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni,repellendus!adipisicing elit. Magni,repellendus!
+          ipsum
+        </p>
+        <div className="call-action">
+          <FaPhone className="call-icon" />
+          {' '}
+          <div className="call-text">
+            <p>
+              Call for your orders
+              <br />
+              +2348035344730
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="text-content2">
+        <div className="form-con">
+          <fieldset>
+            <legend> Just say hi!</legend>
+            <div className="form-group">
+              <form className="get-in-touch" id="form" action="https://formspree.io/f/xqkjanrn" method="POST">
+                <div className="input-con">
+                  <div>
+                    <label className="label" htmlFor="name">
+                      <input className="input" type="text" id="name" name="name" maxLength="30" placeholder="Fullname" required />
+                    </label>
+                  </div>
+                  <div>
+                    <label className="label" htmlFor="mail">
+                      <input className="input" id="mail" type="email" name="email" placeholder="solarmails2@gmail.com" />
+                    </label>
+                  </div>
+
+                  <div>
+                    <label className="label" htmlFor="mobil">
+                      <input className="input" id="mail" type="phone" name="phone" placeholder="+2348035344730" />
+                    </label>
+                  </div>
+                </div>
+
+                <div className="comment-con">
+                  <label className="label" htmlFor="comment">
+                    <textarea name="comment" cols="30" rows="10" maxLength="500" placeholder="What do you think about building your next project with me?" required />
+                    <span className="message" />
+                  </label>
+                </div>
+                <div>
+                  <button className="get-in-touch-btn" type="submit">Get in touch now!!</button>
+                </div>
+              </form>
+            </div>
+          </fieldset>
+          {' '}
+
+        </div>
+      </div>
+    </div>
+
     <div className="teams">
       <div className="teams-title">
         <h3>OUR TEAMS</h3>
