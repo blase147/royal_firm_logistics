@@ -223,25 +223,31 @@ const HomePage = () => (
                 <div className="input-con">
                   <div>
                     <label className="label" htmlFor="name">
-                      <input className="input" type="text" id="name" name="name" maxLength="30" placeholder="Fullname" required />
+                      <input className="input" type="text" id="name" name="name" maxLength="30" placeholder="Full name" required />
                     </label>
                   </div>
                   <div>
                     <label className="label" htmlFor="mail">
-                      <input className="input" id="mail" type="email" name="email" placeholder="solarmails2@gmail.com" />
+                      <input className="input" id="mail" type="email" name="email" placeholder="Your Email" />
                     </label>
                   </div>
 
                   <div>
-                    <label className="label" htmlFor="mobil">
-                      <input className="input" id="mail" type="phone" name="phone" placeholder="+2348035344730" />
+                    <label className="label" htmlFor="mobile">
+                      <input className="input" id="mail" type="phone" name="phone" placeholder="Your mobile number" />
+                    </label>
+                  </div>
+
+                  <div>
+                    <label className="label" htmlFor="mobile">
+                      <input className="input" id="mail" type="phone" name="phone" placeholder="Select Service" />
                     </label>
                   </div>
                 </div>
 
                 <div className="comment-con">
                   <label className="label" htmlFor="comment">
-                    <textarea name="comment" cols="30" rows="10" maxLength="500" placeholder="What do you think about building your next project with me?" required />
+                    <textarea name="comment" cols="30" rows="10" maxLength="500" placeholder="Kindly enter your order details here" required />
                     <span className="message" />
                   </label>
                 </div>
