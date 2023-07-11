@@ -5,7 +5,7 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import {
   FaPhone, FaUser, FaStar, FaBriefcase, FaFacebook, FaLinkedin,
-  FaTwitter, FaInstagram, FaCopyright, FaCalendar,
+  FaTwitter, FaInstagram, FaCopyright, FaCalendar, FaArrowRight,
 } from 'react-icons/fa';
 import {
   testimonials, services, teams, banner,
@@ -206,11 +206,15 @@ const HomePage = () => (
             <p>01 Jan, 2023</p>
           </div>
           <h3>How we build our community</h3>
-          <p>
+          <p className="article-desc">
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
           </p>
-          <p className="readmore">READ MORE</p>
+          <p className="readmore">
+            READ MORE
+            {' '}
+            <FaArrowRight />
+          </p>
         </div>
         {' '}
         <div className="blog-content">
@@ -224,11 +228,15 @@ const HomePage = () => (
             <p>01 Jan, 2023</p>
           </div>
           <h3>How we build our community</h3>
-          <p>
+          <p className="article-desc">
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
           </p>
-          <p className="readmore">READ MORE</p>
+          <p className="readmore">
+            READ MORE
+            {' '}
+            <FaArrowRight />
+          </p>
         </div>
         {' '}
         <div className="blog-content">
@@ -247,7 +255,11 @@ const HomePage = () => (
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
             lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
           </p>
-          <p className="readmore">READ MORE</p>
+          <p className="readmore">
+            READ MORE
+            {' '}
+            <FaArrowRight />
+          </p>
         </div>
       </div>
 

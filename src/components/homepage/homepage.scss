@@ -90,7 +90,6 @@
     }
 
     h3 {
-      // margin-top: 50px;
       padding-top: 0;
       font-size: 2.1em;
       width: 90%;
@@ -397,6 +396,16 @@
   .blog-title {
     display: flex;
     flex-direction: column;
+
+    h3 {
+      color: red;
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 2.0em;
+      font-weight: 900;
+      margin-top: 0;
+    }
   }
 
   .blog-content-con {
@@ -422,8 +431,18 @@
       width: 70%;
     }
     .article-desc {
+      margin-top: 0;
       font-size: 1.2em;
       width: 70%;
+    }
+    .readmore {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+      font-size: 1.6em;
+      width: 40%;
+      color: #e20d0d;
     }
   }
 
