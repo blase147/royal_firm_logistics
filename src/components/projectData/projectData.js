@@ -126,7 +126,7 @@ export const testimonials = [
     image: './testimonials1.jpg',
     name: 'John Doe',
     rating: <RatingIcon rating={4.5} />,
-    location: 'Portharcourt',
+    location: 'Abuja',
     desc: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,repellendus!',
   },
 ];
