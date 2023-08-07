@@ -67,7 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   // background-color: #e21515;
 
   width: 90%;
@@ -77,11 +77,11 @@
 
   img {
     width: 50%;
+    height: auto;
   }
 
   .image-desc {
     width: 40%;
-    // margin-left: 30px;
     text-align: left;
     // background-color: #d41313;
 
@@ -95,7 +95,7 @@
     h3 {
       padding-top: 0;
       font-size: 2.1em;
-      width: 90%;
+      // width: 90%;
     }
 
     .special-color {
@@ -104,7 +104,7 @@
 
     p {
       margin-top: 50px;
-      width: 90%;
+      // width: 90%;
       font-size: 1.5em;
     }
 
@@ -112,10 +112,10 @@
       margin-top: 50px;
       padding: 40px;
       background-color: $blue-color;
-      border-radius: 2px;
+      border-radius: 5px;
       font-size: 1.5em;
       color: white;
-      width: 30%;
+      width: 50%;
     }
   }
 }
@@ -259,23 +259,24 @@
   }
 
   .more-ab-service {
-    // background-color: #c71010;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    // flex-wrap: wrap;
     margin: auto;
-    width: 100%;
+    width: 90%;
 
     .title-desc-con {
       // background-color: #99c710;
       display: flex;
       flex-direction: column;
       text-align: left;
-      width: 50%;
-
+      width: 40%;
+      padding-right: 20px;
+      
       h2 {
-        font-size: 4.1em;
+        font-size: 3.1em;
 
         .special-color {
           color: blue;
@@ -287,7 +288,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 10px;
+        width: 100%;
+        padding-bottom: 20px;
 
         .title-icon {
           font-size: 6.4em;
@@ -301,6 +304,7 @@
           flex-direction: column;
           align-items: left;
 
+
           h3 {
             text-align: left;
             font-size: 2.3em;
@@ -309,11 +313,9 @@
           }
 
           p {
-            font-size: 1.5em;
+            font-size: 1.1em;
             margin-top: 0;
             padding-top: 0;
-            // width: 100%;
-            // text-overflow: clip;
           }
         }
       }
@@ -321,7 +323,7 @@
 
     img {
       width: 50%;
-      height: 650px;
+      // height: 100%;
     }
   }
 }
