@@ -286,6 +286,16 @@ const HomePage = () => (
       </div>
 
     </div>
+
+    <div className="partners">
+      <h3>Partners</h3>
+      <div className="partners_img_cont">
+        <img src=".././partner1.jpg" alt="Partner 1" className="partner" />
+        <img src=".././partner1.jpg" alt="Partner 1" className="partner" />
+        <img src=".././partner1.jpg" alt="Partner 1" className="partner" />
+      </div>
+    </div>
+
     <div className="testimonials">
       <div className="testimonials-title">
         <h3>TESTIMONIALS</h3>
